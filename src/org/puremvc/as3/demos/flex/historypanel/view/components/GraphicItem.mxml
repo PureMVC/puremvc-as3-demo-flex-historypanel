@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ PureMVC AS3 Flex Demo – History Panel
+ Copyright (c) 2008 Dragos Dascalita <dragos.dascalita@puremvc.org>
+ Your reuse is governed by the Creative Commons Attribution 3.0 License
+-->
+
+<ObjectHandles xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns="com.roguedevelopment.objecthandles.*" 
+	allowRotate="true"
+	objectRotatedEvent="dispatchEvent( new Event( OBJECT_ROTATED ) );"
+	objectMovedEvent="dispatchEvent( new Event( OBJECT_MOVED ) );"
+	objectResizedEvent="dispatchEvent( new Event( OBJECT_RESIZED ) );" >
+	
+	<mx:Script>
+		<![CDATA[
+			public static const OBJECT_ROTATED:String 	= "onObjectRotated";
+			public static const OBJECT_MOVED:String		= "onObjectMoved";
+			public static const OBJECT_RESIZED:String   = "onObjectResized";
+		]]>
+	</mx:Script>
+	
+	<mx:Image id="img" scaleContent="true" maintainAspectRatio="false" />
+	
+</ObjectHandles>

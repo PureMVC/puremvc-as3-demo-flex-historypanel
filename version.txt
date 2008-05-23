@@ -11,4 +11,7 @@ Release Date: ??/??/??
 --------------------------------------------------------------------------
 0.9 - Checked in initial folder structure and license - CLH
 
-1.0 - 
+1.0 - Alpha 1 version:
+	- Use Ctrl + Z to Undo / Ctrl + Y to Redo
+	
+2.0 - Coming up: A History Panel to undo / redo at any point

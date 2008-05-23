@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ PureMVC AS3 Flex Demo – History Panel
+ Copyright (c) 2008 Dragos Dascalita <dragos.dascalita@puremvc.org>
+ Your reuse is governed by the Creative Commons Attribution 3.0 License
+-->
+
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
+	borderColor="#282828" borderStyle="solid"
+	backgroundColor="#FFFFFF" 
+	xmlns:components="org.puremvc.as3.demos.flex.historypanel.view.components.*"
+	horizontalScrollPolicy="off" verticalScrollPolicy="off">
+	
+	<mx:Fade id="fadeOut" duration="30000" alphaFrom="1" alphaTo=".3" />
+	
+	<mx:Canvas >
+		<mx:Label id="lblHint" text="[ Use Ctrl+Z to UNDO and Ctrl+Y to REDO ]" styleName="hint"
+			hideEffect="{fadeOut}" />
+	</mx:Canvas>
+	
+</mx:Canvas>
