@@ -42,7 +42,7 @@ package org.puremvc.as3.demos.flex.historypanel.view
 		
 		override public function getMediatorName():String
 		{
-			return NAME;
+			return NAME + graphicItemVO.uid;
 		}
 		
 		/**

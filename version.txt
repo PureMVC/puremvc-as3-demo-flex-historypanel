@@ -15,4 +15,6 @@ Release Date: ??/??/??
 	- Move , Rotate, Resize graphic items 
 	- Use keyboard shortcuts to undo ( Ctrl + Z ) and redo (  Ctrl + Y )
 	
+1.0.1: updated a fix for the GraphicItemMediator: the name of the mediator is now: NAME + graphicItemVO.uid
+	
 2.0 - Coming up: A History Panel to undo / redo at any point
