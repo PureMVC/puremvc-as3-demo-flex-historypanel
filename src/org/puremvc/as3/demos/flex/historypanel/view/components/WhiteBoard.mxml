@@ -14,7 +14,7 @@
 	<mx:Fade id="fadeOut" duration="30000" alphaFrom="1" alphaTo=".3" />
 	
 	<mx:Canvas >
-		<mx:Label id="lblHint" text="[ Resize, stretch and rotate images... ]" styleName="hint"
+		<mx:Label id="lblHint" text="[ Move, resize, stretch and rotate the images... ]" styleName="hint"
 			hideEffect="{fadeOut}" />
 	</mx:Canvas>
 	
