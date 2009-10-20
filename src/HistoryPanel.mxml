@@ -5,7 +5,7 @@
  Your reuse is governed by the Creative Commons Attribution 3.0 License
 -->
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
-	pageTitle="PureMVC Demo: LoadupAsOrdered"
+	pageTitle="PureMVC Demo: HistoryPanel"
 	layout="vertical" horizontalAlign="center" verticalAlign="middle"
 	xmlns:components="org.puremvc.as3.demos.flex.historypanel.view.components.*"
 	backgroundGradientColors="[#325EC0,#FFFFFF]"
