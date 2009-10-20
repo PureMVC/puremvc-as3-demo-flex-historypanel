@@ -10,6 +10,14 @@
 	backgroundColor="#FFFFFF" 
 	xmlns:components="org.puremvc.as3.demos.flex.historypanel.view.components.*"
 	horizontalScrollPolicy="off" verticalScrollPolicy="off">
+	<mx:Script>
+		<![CDATA[
+			public function hideHint():void
+			{
+				lblHint.visible=false;
+			}
+		]]>
+	</mx:Script>
 	
 	<mx:Fade id="fadeOut" duration="30000" alphaFrom="1" alphaTo=".3" />
 	

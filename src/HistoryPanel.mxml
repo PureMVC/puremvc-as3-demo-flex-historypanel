@@ -9,7 +9,6 @@
 	layout="vertical" horizontalAlign="center" verticalAlign="middle"
 	xmlns:components="org.puremvc.as3.demos.flex.historypanel.view.components.*"
 	backgroundGradientColors="[#325EC0,#FFFFFF]"
-	viewSourceURL="srcview/index.html"
 	backgroundColor="#FFFFFF" 
 	themeColor="HaloBlue"
 	creationComplete="facade.startup(this)">
@@ -30,7 +29,7 @@
 		<mx:Label fontWeight="bold" text="PureMVC AS3 / Flex / Undo Utility Demo"/>
 	</mx:ApplicationControlBar>
 	
-	<mx:Panel title="Whiteboard" status="Ctrl-Z: Undo / Ctrl-X: Redo">
+	<mx:Panel title="Whiteboard" status="Ctrl-Z: Undo / Ctrl-Y: Redo">
 		<components:WhiteBoard id="whiteBoard" left="50" right="50" top="50" bottom="50" />
 	</mx:Panel>
 	
