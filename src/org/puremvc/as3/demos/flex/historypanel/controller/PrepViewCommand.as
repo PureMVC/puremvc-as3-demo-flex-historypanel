@@ -7,7 +7,6 @@
 package org.puremvc.as3.demos.flex.historypanel.controller
 {
 	import org.puremvc.as3.demos.flex.historypanel.view.ApplicationMediator;
-	import org.puremvc.as3.demos.flex.historypanel.view.HistoryPanelMediator;
 	import org.puremvc.as3.demos.flex.historypanel.view.WhiteBoardMediator;
 	import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.command.SimpleCommand;
@@ -21,10 +20,9 @@ package org.puremvc.as3.demos.flex.historypanel.controller
 	{
 		override public function execute(note:INotification):void
 		{
-			var app:HistoryPanelDemo = note.getBody() as HistoryPanelDemo;
+			var app:HistoryPanel = note.getBody() as HistoryPanel;
 			facade.registerMediator( new ApplicationMediator( app ) );
 			facade.registerMediator( new WhiteBoardMediator( app.whiteBoard ) );
-			facade.registerMediator( new HistoryPanelMediator( app.historyPanel ) );
 		}
 		
 	}

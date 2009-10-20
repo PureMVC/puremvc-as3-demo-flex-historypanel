@@ -35,5 +35,11 @@ package org.puremvc.as3.demos.flex.historypanel
 			registerCommand( MOVE, MoveCommand );
 			registerCommand( RESIZE, ResizeCommand );
 		}
+
+		public function startup( app:HistoryPanel ):void
+		{
+			sendNotification( STARTUP, app );
+		}
+
 	}
 }

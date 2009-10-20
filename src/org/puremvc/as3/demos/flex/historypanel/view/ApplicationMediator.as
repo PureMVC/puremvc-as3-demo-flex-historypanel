@@ -33,9 +33,9 @@ package org.puremvc.as3.demos.flex.historypanel.view
 			return NAME;
 		}
 		
-		public function get view():HistoryPanelDemo
+		public function get view():HistoryPanel
 		{
-			return viewComponent as HistoryPanelDemo;
+			return viewComponent as HistoryPanel;
 		}
 		
 		private function onApplicationComplete( event:FlexEvent ):void

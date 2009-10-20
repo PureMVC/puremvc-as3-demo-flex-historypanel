@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ PureMVC AS3 Flex Demo – History Panel
+ Copyright (c) 2008 Dragos Dascalita <dragos.dascalita@puremvc.org>
+ Your reuse is governed by the Creative Commons Attribution 3.0 License
+-->
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+	pageTitle="PureMVC Demo: LoadupAsOrdered"
+	layout="vertical" horizontalAlign="center" verticalAlign="middle"
+	xmlns:components="org.puremvc.as3.demos.flex.historypanel.view.components.*"
+	backgroundGradientColors="[#325EC0,#FFFFFF]"
+	viewSourceURL="srcview/index.html"
+	backgroundColor="#FFFFFF" 
+	themeColor="HaloBlue"
+	creationComplete="facade.startup(this)">
+	
+	<mx:Script>
+		<![CDATA[
+			import org.puremvc.as3.patterns.observer.Notification;
+			import org.puremvc.as3.demos.flex.historypanel.ApplicationFacade;
+			
+			private var facade:ApplicationFacade = ApplicationFacade.getInstance();
+		]]>
+	</mx:Script>
+	
+	<mx:Style source="assets/style/main.css" />
+	
+	<mx:ApplicationControlBar verticalAlign="middle" backgroundColor="#FFFFFF" dock="true">
+		<mx:Text text="History Panel" fontFamily="Verdana" fontSize="22" fontStyle="normal" color="#0559CC"/>
+		<mx:Label fontWeight="bold" text="PureMVC AS3 / Flex / Undo Utility Demo"/>
+	</mx:ApplicationControlBar>
+	
+	<mx:Panel title="Whiteboard" status="Ctrl-Z: Undo / Ctrl-X: Redo">
+		<components:WhiteBoard id="whiteBoard" left="50" right="50" top="50" bottom="50" />
+	</mx:Panel>
+	
+</mx:Application>
