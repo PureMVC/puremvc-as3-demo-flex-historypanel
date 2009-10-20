@@ -10,9 +10,10 @@ Release Date: 10/20/09
      License: Creative Commons Attribution 3.0 United States License
 --------------------------------------------------------------------------
 1.1   - Updated layout to general PureMVC demo style.
-      - Put the canvas in a panel, with Ctrl-Z/X usage note in status
+      - Put the canvas in a panel, with Ctrl-Z/Ctrl-Y usage note in status
       - Added hint to canvas to move, resize, stretch and rotate images. 
-      - Removed unused HistoryPanel, HistoryPanelMediator and registration - CLH
+      - Removed unused HistoryPanel, HistoryPanelMediator and registration 
+      - Refactored mediator constructor activity to onRegister. CLH
         
 1.0.1 - Updated a fix for the GraphicItemMediator: the name of the 
         mediator is now: NAME + graphicItemVO.uid

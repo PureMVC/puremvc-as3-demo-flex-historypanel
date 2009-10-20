@@ -22,18 +22,17 @@ package org.puremvc.as3.demos.flex.historypanel.view
 	{
 		public static const NAME:String = "WhiteBoardMediator";
 		
-		public function WhiteBoardMediator( viewComponent:Object=null)
+		public function WhiteBoardMediator( viewComponent:Object=null )
 		{
 			super(NAME, viewComponent);
-			view.lblHint.visible = false;
 		}
-		
-		override public function getMediatorName():String
+
+		override public function onRegister():void
 		{
-			return NAME;
-		}
-		
-		public function get view():WhiteBoard
+			whiteBoard.hideHint();
+		}	
+			
+		public function get whiteBoard():WhiteBoard
 		{
 			return viewComponent as WhiteBoard;
 		}
@@ -58,8 +57,7 @@ package org.puremvc.as3.demos.flex.historypanel.view
 					var giMediator:GraphicItemMediator 	= new GraphicItemMediator( giView, gi );
 					
 					facade.registerMediator( giMediator );
-					
-					view.addChild( giView );
+					whiteBoard.addChild( giView );
 					
 					break;
 				case WhiteboardProxy.GRAPHIC_ITEM_REMOVED:

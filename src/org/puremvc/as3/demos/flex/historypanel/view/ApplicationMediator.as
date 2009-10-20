@@ -19,28 +19,25 @@ package org.puremvc.as3.demos.flex.historypanel.view
 		
 		private var commandHistoryProxy:CommandsHistoryProxy;
 		
-		public function ApplicationMediator( viewComponent:Object=null)
+		public function ApplicationMediator( viewComponent:HistoryPanel )
 		{
 			super(NAME, viewComponent);
-
-			commandHistoryProxy = facade.retrieveProxy( CommandsHistoryProxy.NAME ) as CommandsHistoryProxy;
-
-			view.addEventListener( FlexEvent.APPLICATION_COMPLETE, onApplicationComplete );
 		}
 		
-		override public function getMediatorName():String
+		override public function onRegister():void
 		{
-			return NAME;
+			commandHistoryProxy = facade.retrieveProxy( CommandsHistoryProxy.NAME ) as CommandsHistoryProxy;
+			app.addEventListener( FlexEvent.APPLICATION_COMPLETE, onApplicationComplete );
 		}
 		
-		public function get view():HistoryPanel
+		public function get app():HistoryPanel
 		{
 			return viewComponent as HistoryPanel;
 		}
 		
 		private function onApplicationComplete( event:FlexEvent ):void
 		{
-			view.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp );
+			app.stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp );
 		}
 		
 		private function onKeyUp( event:KeyboardEvent ):void

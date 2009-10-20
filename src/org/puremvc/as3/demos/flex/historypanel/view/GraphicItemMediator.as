@@ -37,6 +37,10 @@ package org.puremvc.as3.demos.flex.historypanel.view
 		{
 			super(NAME, viewComponent);
 			this.graphicItemVO = graphicItemVO;
+		}
+		
+		override public function onRegister():void
+		{
 			view.addEventListener( FlexEvent.CREATION_COMPLETE, init );
 		}
 		
